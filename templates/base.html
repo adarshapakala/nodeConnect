@@ -1,7 +1,7 @@
 <!-- This is the base HTML file for all the HTML files in this application -->
 {%load static%}
 <!DOCTYPE html>
-<html  >
+<html>
 <head>
  
   <meta charset="UTF-8">
@@ -24,6 +24,7 @@
   <link rel="preload" as="style" href="{% static 'mobirise/css/mbr-additional.css' %}">
   <link rel="stylesheet" href="{% static 'mobirise/css/mbr-additional.css' %}" type="text/css">
   <link rel="stylesheet" href="{% static 'socicon/css/styles.css' %}">
+  {% block linkStyleSheets %} {% endblock %}
   
  <!-- ***************** HEADER STRIP ***************--> 
 </head>
@@ -66,7 +67,7 @@
             
         </div>
     </nav>
-</section>
+  </section>
 
 {%block content%}
 
@@ -137,5 +138,5 @@
   
   
   <!-- <input name="animation" type="hidden"> -->
-  </body>
+</body>
 </html>

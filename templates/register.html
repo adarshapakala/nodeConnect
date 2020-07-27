@@ -1,0 +1,31 @@
+{%load static%}
+
+<html>
+    <head>
+        <title>Register</title>
+        <link rel="stylesheet" href ="{% static 'css/style.css' %}" >
+    </head>
+     
+<body>   
+
+<section>
+    <div class = "mainbase"> 
+    <form action ="login" mehtod ="post">    
+        <div class = "form-box">
+            <form id ="login" action ="register" mehtod ="post" class = "input-group">
+                <input type ="text" class ="input-field" placeholder= "First Name" required>
+                <input type ="text" class ="input-field" placeholder= "Last Name" required>
+                <input type ="email" class ="input-field" placeholder= "Email" required>
+                <input type ="password" class ="input-field" placeholder= "Password" required>
+                <input type ="password" class ="input-field" placeholder= "Re-enter Password" required>
+                <button type ="submitt" class = "submitt-bttn">Register</button>
+                <p><a href="login">Already have account, Sign In</a></p>
+            </form>
+        </div>
+    </form>
+    </div>
+</section>
+
+</body>
+</html>
+
