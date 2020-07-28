@@ -15,17 +15,9 @@
     width:380px;
     height:520px;
     position:relative;
-    margin:3% auto;
+    margin:6% auto;
     background-color: #ffffff;
     padding:5px;
-}
-
-.button-box{
-    width:220px;
-    margin:35px auto;
-    position:relative;    
-    box-shadow:0 0 20px 9px #ff61241f;
-    border-radius: 30px;    
 }
 
 .toggle-bttn{
@@ -49,7 +41,7 @@
 }
 
 .input-group{
-    top:180px;
+    top:2px;
     position: absolute;
     width:280px;
     transition: .5s;
@@ -58,24 +50,36 @@
 .input-field{
     width: 100%;
     padding: 10px 15px;
-    margin: 20px 5px;
+    margin: 12px 5px;
     border-left: 0;
     border-top: 100px;
     border-right: 0;
     border-bottom: 1px solid #999;
     background:transparent;
+    
 }
 
 .submitt-bttn{
     width: 85%;
     padding: 10px 10px;
-    margin: 40px 20px;
+    margin: 20px 30px;
     cursor: pointer;
     display: block;
     background: linear-gradient(to right, #ff105f, #ffad06);
     border: 0;
     outline: none;
     border-radius: 30ps;
+    position: center;
+}
+
+.anchor-link
+{
+    padding: 10px 10px;
+    margin: 20x 50px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: center;
 }
 
 span{

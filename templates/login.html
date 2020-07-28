@@ -10,16 +10,22 @@
 
 <section>
     <div class = "mainbase"> 
-    <form action ="login" mehtod ="post">    
+        
         <div class = "form-box">
-            <form id ="login" action ="login" mehtod ="post" class = "input-group">
-                <input type ="text" class ="input-field" placeholder= "Username" required>
-                <input type ="text" class ="input-field" placeholder= "Password" required>
+            <form id ="login" action ="login" method ="post" class = "input-group">
+                {% csrf_token %}
+                <input type ="text" class ="input-field" name ="user_name" placeholder= "Username" required>
+                <input type ="text" class ="input-field" name ="password" placeholder= "Password" required>
+                <div>
+                    {%for message in messages %}
+                    <h3>{{messgae}}</h3>
+                    {%endfor%}
+                </div>
                 <button type ="submitt" class = "submitt-bttn">Log In</button>
                 <p><a href="register">Dont have account? Sign Creat Account</a></p>
             </form>
         </div>
-    </form>
+    
     </div>
 </section>
 
