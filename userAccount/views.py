@@ -4,22 +4,18 @@ from django.contrib import messages
 
 def login(request):
     if request.method =='POST':
-        print('login called') 
         user_name=request.POST['user_name']
         password=request.POST['password']
         user=auth.authenticate(username=user_name, password=password)
         if user is not None:
-            print('login3 called') 
             auth.login(request,user)
             messages.info(request, 'Login success')
             return redirect("/")
         else:
-            print('login4 called') 
             messages.info(request, 'Invalid credentials')
             return redirect('login')
     else:
         list(messages.get_messages(request)) ##Clear the messges while loading the page first time
-        print('login2 called') 
         return render(request, 'login.html')
 
 def register(request):

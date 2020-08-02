@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'nodeConnect',
     'homePage',
     'userAccount',
+    'dashBoard',
 ]
 
 MIDDLEWARE = [
